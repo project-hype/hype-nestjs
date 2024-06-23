@@ -5,7 +5,12 @@ import { CfService } from './cf.service';
 export class CfController {
   constructor(private readonly cfService: CfService) {}
 
-  @Get(':id')
+  @Get('/train')
+  trainDataset() {
+    this.cfService.trainDataset();
+  }
+
+  @Get('/:id')
   async getScore(@Param('id', ParseIntPipe) id: number) {
     return this.cfService.getScoreList(id);
   }
