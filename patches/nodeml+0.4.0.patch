@@ -1,0 +1,71 @@
+diff --git a/node_modules/nodeml/.DS_Store b/node_modules/nodeml/.DS_Store
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/nodeml/libs/cf.js b/node_modules/nodeml/libs/cf.js
+index 6c845ff..0b40dc9 100644
+--- a/node_modules/nodeml/libs/cf.js
++++ b/node_modules/nodeml/libs/cf.js
+@@ -10,6 +10,63 @@ module.exports = function () {
+     app.maxRelatedUser = 0;
+     app.maxRelatedItem = 0;
+ 
++    /**
++     * 이미 트레이닝된 모델에
++     * 하나의 데이터만 추가 트레이닝
++     * @author 조영욱
++     * @param {*} data
++     * @param {*} x
++     * @param {*} y
++     * @param {*} val
++     */
++    app.addTrain = (data, x, y, val) => {
++        if (!x) x = 0;
++        if (!y) y = 1;
++        if (!val) val = 2;
++
++        let userId = data[x];
++        let itemId = data[y];
++        let feature = data[val] * 1;
++
++        // 이미 트레이닝된 모델에 대해서 새로운 데이터만 추가
++        if (!trained.userBase[userId]) trained.userBase[userId] = [];
++        if (!trained.itemBase[itemId]) trained.itemBase[itemId] = [];
++
++        // 유저가 이미 평가한 상품이라면 index > -1
++        const userIndex = trained.userBase[userId].findIndex(
++            (obj) => obj.itemId === itemId
++        );
++
++        if (userIndex === -1) {
++            // 새로운 상품에 대한 평가라면 새로 push
++            trained.userBase[userId].push({ itemId: itemId, feature: feature });
++            trained.itemBase[itemId].push({ userId: userId, feature: feature });
++        } else {
++            // 평가한 상품에 대해 수정한 것이라면 이전 평가 덮어쓰기
++            trained.userBase[userId][userIndex].feature = feature;
++
++            const itemIndex = trained.itemBase[itemId].findIndex(
++                (obj) => obj.userId === userId
++            );
++            trained.itemBase[itemId][itemIndex].feature = feature;
++        }
++
++        // 랭킹에 추가, 재정렬
++        let found = false;
++        for (let i = 0; i < trained.ranking.length; i++) {
++        if (itemId === trained.ranking.itemId) {
++            trained.ranking.play += feature;
++            found = true;
++            break;
++        }
++        }
++        if (!found) {
++            trained.ranking.play = feature;
++        }
++
++        trained.ranking.sort((a, b) => b.play - a.play);
++    };
++
+     // dataset, user col, item col, value
+     app.train = (data, x, y, val)=> {
+         if (!x) x = 0;
