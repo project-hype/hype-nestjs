@@ -62,6 +62,11 @@ export class CfService implements OnModuleInit {
     this.cf.addTrain(starScore, 'memberId', 'eventId', 'score');
   }
 
+  /**
+   * 추천 행사 리스트 조회
+   * @param memberId
+   * @returns
+   */
   async getScoreList(memberId: number) {
     Logger.log('요청 member: ' + memberId);
 
