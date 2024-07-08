@@ -1,73 +1,95 @@
+<h1 align="middle">HYPE</h1>
+
+
+<h3 align="center">현대백화점 행사 통합 플랫폼</h3>
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+<img style="width: 300px;" src="https://github.com/project-hype/hype-spring/assets/128574107/723da6a7-7d07-470c-9790-4cd009fb8d06" />
 </p>
+<br>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## 👀 프로젝트 소개
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+현대IT&E 채용연계형 9기 1차 프로젝트
 
-## Description
+```
+'HYPE'는 Hyundai Your Place Explorer의 약자로,
+현대 백화점의 행사들을 한눈에 모아볼 수 있는 플랫폼입니다.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ npm install
+행사 추천 서비스, 간편 검색, 별점 및 즐겨찾기 기능을 통해 쉽게 행사들을 탐색하고,
+나만의 리스트를 만들어 관리할 수 있어요!
 ```
 
-## Running the app
+### 📌 프로젝트 목적 및 목표
 
-```bash
-# development
-$ npm run start
+본 프로젝트는 사용자 친화적인 현대백화점 행사 통합 플랫폼 개발을 목적으로 한다.
 
-# watch mode
-$ npm run start:dev
+이를 통해 사용자 경험을 개선하고, 백화점 행사의 접근성을 높이며, 사용자 참여를 증대시키고자 한다.
 
-# production mode
-$ npm run start:prod
-```
+**[목표]**
 
-## Test
+1️⃣ 정보 통합 제공
 
-```bash
-# unit tests
-$ npm run test
+2️⃣ 개인화된 행사 추천 서비스
 
-# e2e tests
-$ npm run test:e2e
+3️⃣ 간편 검색 및 사용자 의견 공유 플랫폼 구축
 
-# test coverage
-$ npm run test:cov
-```
+<br>
 
-## Support
+### 📌 기대 효과
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+1️⃣ 사용자 유입 증가로 인한 구매 전환 증가
 
-## Stay in touch
+2️⃣ 데이터 수집으로 인한 운영 효율성 증가
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+3️⃣ 사용자 만족도 및 재방문율 증가
 
-## License
+<br>
 
-Nest is [MIT licensed](LICENSE).
+## 👥 팀 구성
+
+
+<div align="center">
+팀명 : Devjeans(4팀)
+<br>
+  
+| 조영욱 | 임원정 | 정은지 |
+| --- | --- | --- |
+| <img style="width:200px; height:200px;" src="https://github.com/project-hype/hype-react/assets/73675222/9e85a7b9-421f-49d6-9847-a2fd4a29f5a2" /> | <img style="width:200px; height:200px;" src="https://github.com/project-hype/hype-spring/assets/128574107/a62e727a-5412-4400-8aae-c76672af3c3d" /> | <img style="width:200px; height:200px;" src="https://github.com/project-hype/hype-react/assets/73675222/e71cff63-de78-4933-9cee-9e2213bf3a28" /> |
+| <a href="https://github.com/choyeongwook">@choyeongwook</a> | <a href="https://github.com/wj0624">@wj0624</a> | <a href="https://github.com/eunjeeing">@eunjeeing</a> |
+
+</div>
+<br>
+
+## 🔧 기술스택
+
+
+<div align="center">
+
+  ### ⭐ 프론트엔드 ⭐
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/styledcomponents-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"/>  <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"/>  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> <img src="https://img.shields.io/badge/recoil-3578E5?style=for-the-badge&logo=recoil&logoColor=black"/> 
+
+**Language** | Node.js 18.20.3
+
+**Framework** | React 18
+
+**Library** | axios 1.7.2, styled-components 6.1.11, recoil 0.7.7
+</div>
+<br>
+
+<div align="center">
+
+  ### ⭐ 백엔드 ⭐
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/> <img src="https://img.shields.io/badge/apachetomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black"/> <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"> <img src="https://img.shields.io/badge/nest.js-E0234E?style=for-the-badge&logo=nestjs&logoColor=white"/> <img src="https://img.shields.io/badge/typeorm-FE0803?style=for-the-badge&logo=typeorm&logoColor=white"/>
+
+**Language** | Java 1.8
+
+**Framework** | Spring Legacy 5
+
+**Data(RDBMS) |** Oracle 21c
+</div>
+<br>
+
+
+## ⚙️ 시스템 구성도
+<img src="https://github.com/project-hype/hype-spring/assets/128574107/fac2f4ae-e86b-4166-9300-dee54387dc41" />
+<br>
