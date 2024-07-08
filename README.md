@@ -93,3 +93,12 @@
 ## ⚙️ 시스템 구성도
 <img src="https://github.com/project-hype/hype-spring/assets/128574107/fac2f4ae-e86b-4166-9300-dee54387dc41" />
 <br>
+
+<br>
+
+## 💁‍♂️ 추천 시스템
+
+사용자 기반 협업 필터링(User-Based Collaborative Filtering) 기술 사용
+<div align="center">
+<img src="https://github.com/project-hype/hype-nestjs/assets/72301213/bf686104-4ed8-4e10-82ae-2331f6816033"/>
+</div>
